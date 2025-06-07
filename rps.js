@@ -27,13 +27,13 @@ function computerAns(choice) {
   setTimeout(function () {
     if (randomNum == 1) {
       ansRight = "Rock";
-      imgRight.src = "/Projects/Images/rock.png";
+      imgRight.src = "../rock.png";
     } else if (randomNum == 2) {
       ansRight = "Paper";
-      imgRight.src = "/Projects/Images/paper.png";
+      imgRight.src = "../paper.png";
     } else {
       ansRight = "Scissors";
-      imgRight.src = "/Projects/Images/scissors.png";
+      imgRight.src = "../scissors.png";
     }
     result(choice, ansRight);
   }, 3000);
@@ -61,8 +61,8 @@ function result(choice, ansRight) {
 // document.getElementById("output").textContent = ansRight;
 
 btnRematch.onclick = function () {
-  imgLeft.src = "/Projects/Images/close.png";
-  imgRight.src = "/Projects/Images/close.png";
+  imgLeft.src = "../close.png";
+  imgRight.src = "../close.png";
   btnRematch.style.display = "None";
   btnRestart.style.display = "None";
   wordResult.textContent = "Make Your Move!";
@@ -74,8 +74,8 @@ btnRematch.onclick = function () {
 };
 
 btnRestart.onclick = function () {
-  imgLeft.src = "/Projects/Images/close.png";
-  imgRight.src = "/Projects/Images/close.png";
+  imgLeft.src = "../close.png";
+  imgRight.src = "../close.png";
   btnRematch.style.display = "None";
   btnRestart.style.display = "None";
   wordResult.textContent = "";
@@ -92,7 +92,7 @@ btnRestart.onclick = function () {
 };
 
 btnRockL.onclick = function () {
-  imgLeft.src = "/Projects/Images/rock.png";
+  imgLeft.src = "../rock.png";
   randomNum = Math.round(Math.random() * (max - min) + min);
   computerAns("Rock");
   [btnRockL, btnPaperL, btnScissorsL].forEach((btn) => {
@@ -104,7 +104,7 @@ btnRockL.onclick = function () {
 };
 
 btnPaperL.onclick = function () {
-  imgLeft.src = "/Projects/Images/paper.png";
+  imgLeft.src = "../paper.png";
   randomNum = Math.round(Math.random() * (max - min) + min);
   computerAns("Paper");
   [btnRockL, btnPaperL, btnScissorsL].forEach((btn) => {
@@ -116,7 +116,7 @@ btnPaperL.onclick = function () {
 };
 
 btnScissorsL.onclick = function () {
-  imgLeft.src = "/Projects/Images/scissors.png";
+  imgLeft.src = "../scissors.png";
   randomNum = Math.round(Math.random() * (max - min) + min);
   computerAns("Scissors");
   [btnRockL, btnPaperL, btnScissorsL].forEach((btn) => {

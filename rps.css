@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'SuperShape';
-    src: url('../Games/SuperShape-PV9qE.ttf') format('truetype');
+    src: url('SuperShape-PV9qE.ttf') format('truetype');
 }
 
 body {
-    background-image: url(/Projects/Images/rps.jpg);
+    background-image: url(rps.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
