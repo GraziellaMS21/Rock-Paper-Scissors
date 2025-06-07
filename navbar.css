@@ -23,7 +23,7 @@
 }
 .title {
     font-family: 'PixelGame';
-    font-size: clamp(1rem, 8vw, 10rem);    
+    font-size: clamp(0.5rem, 8vw, 10rem);    
     font-weight: 600;
 }
 
