@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'SuperShape';
+    src: url('../Games/SuperShape-PV9qE.ttf') format('truetype');
+}
+
+body {
+    background-image: url(/Projects/Images/rps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title {
+    text-shadow: 4px 2px rgba(0, 0, 0, 0.63);
+}
+
+img {
+    height: 18rem;
+    width: 18rem;
+}
+
+.options button {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(41, 19, 138, 0.555);
+    border: 3px solid rgba(21, 21, 85, 0.781);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family:'SuperShape';
+    font-weight: 900;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.63);
+    letter-spacing: 4px;
+    transition: transform 0.5s ease;
+}
+
+.options button:hover {
+    background-color: rgb(3, 3, 61);
+    transform: translateY(-10px);
+}
+
+
+
+h2 {
+    font-family:'SuperShape';
+    font-weight: 900;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.884);
+    letter-spacing: 3px;
+}
+
+#display {
+    height: 5rem;
+    font-size: 3rem;
+}
+
+#result {
+    height: 10rem;
+    color:rgb(3, 3, 61)
+}
+
+.wins h2, .loses h2{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 8ch;
+    text-align: start !important;
+}
+
+#wins, #loses {
+    margin-left: 1rem !important;
+    width: 4rem !important; 
+    text-align: end !important;
+}
+
+.btnOptions button {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: 900;
+    transition: transform 0.5s ease;
+    display: none;
+    font-family:'SuperShape';
+    font-weight: 900;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.884);
+    letter-spacing: 3px;
+}
+#rematch {
+    background-color: rgba(100, 20, 33, 0.7) !important;
+    border: 3px solid rgba(95, 14, 14, 0.671);
+}
+
+#rematch:hover {
+    background-color: rgba(100, 20, 33) !important;
+}
+
+#restart {
+    background-color: rgba(172, 149, 49, 0.7) !important;
+    border: 3px solid rgba(206, 194, 22, 0.671);
+}
+
+#restart:hover {
+    background-color: rgba(172, 149, 49) !important;
+}
+
+#rematch:hover, #restart:hover{
+    transform: scale(1.5);
+}
