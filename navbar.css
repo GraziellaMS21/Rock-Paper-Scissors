@@ -23,12 +23,12 @@
 }
 .title {
     font-family: 'PixelGame';
-    font-size: 6rem;
+    font-size: clamp(3.5rem, 8vw, 10rem);    
     font-weight: 600;
 }
 
 .title:hover {
-    font-size: 7rem;
+    font-size: clamp(3.65rem, 9vw, 11rem);
     cursor: pointer;
 }
 
